@@ -1,7 +1,8 @@
 ---
-tags: oo, beginner
+tags: oo, kids
 languages: ruby
 resources: 1
+type: lab
 ---
 
 # My Pets
