@@ -1,9 +1,9 @@
 require_relative 'spec_helper.rb'
 
 describe Owner do
-  before(:each) do
-    Owner.reset_all
-  end
+  # before(:each) do
+  #   Owner.reset_all
+  # end
 
   let(:owner) { Owner.new("human") }
   let(:fish) { Fish.new("Nemo") }
@@ -56,36 +56,18 @@ describe Owner do
 
   it 'knows about its fishes' do
     owner.buy_fish("Bubbles")
-    expect(owner.pets[:fishes][0].name).to eq("Bubbles")
+    expect(owner.pets[:fishes][0]).to eq("Bubbles")
   end
 
   it 'knows about its cats' do 
     owner.buy_cat("Crookshanks")
-    expect(owner.pets[:cats][0].name).to eq("Crookshanks")
+    expect(owner.pets[:cats][0]).to eq("Crookshanks")
   end
 
   it 'knows about its dogs' do
     owner.buy_dog("Snuffles")
-    expect(owner.pets[:dogs][0].name).to eq("Snuffles") 
+    expect(owner.pets[:dogs][0]).to eq("Snuffles") 
   end
-
-  it "walks the dogs which makes the dogs' moods happy" do
-    dog = owner.buy_dog("Daisy")[0]
-    owner.walk_dogs
-    expect(dog.mood).to eq("happy")
-  end 
-
-  it "plays with the cats which makes the cats moods happy" do
-    cat = owner.buy_cat("Muffin")[0]
-    owner.play_with_cats
-    expect(cat.mood).to eq("happy")
-  end 
-
-  it "feeds the fishes which makes the fishes' moods happy" do
-    fish = owner.buy_fish("Goldie")[0]
-    owner.feed_fish
-    expect(fish.mood).to eq("happy")
-  end 
 
   it 'can list off its pets' do 
     owner.buy_fish("Bubbles")
