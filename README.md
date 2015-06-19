@@ -13,7 +13,7 @@ Practice building classes and learn how classes can interact with each other.
 
 ### Instructions
 
-Run the tests and build out your classes. Let the tests guide how to build your classes.
+Write your code in the cooresponding files in the `lib` directory. Run the tests and build out your classes. Let the tests guide how to build your classes.
 
 ### Resources
 
