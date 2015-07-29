@@ -1,9 +1,4 @@
----
-tags: oo, kids
-languages: ruby
-resources: 1
-type: lab
----
+
 
 ### Objective
 Practice building classes and learn how classes can interact with each other.
