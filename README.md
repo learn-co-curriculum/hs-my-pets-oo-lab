@@ -13,3 +13,5 @@ Write your code in the cooresponding files in the `lib` directory. Run the tests
 ### Resources
 
 [Sandi Metz's Practical Object-Oriented Design in Ruby: An Agile Primer](http://books.flatironschool.com/books/102) - [Chapters 1 and 2](http://books.flatironschool.com/books/102?page=48), page 26
+
+<a href='https://learn.co/lessons/hs-my-pets-oo-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
